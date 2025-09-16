@@ -1,14 +1,25 @@
-- name: playing with conditions
+# - name: playing with conditions
+#   hosts: remote
+#   connection: local
+#   vars: 
+#     number: 1
+#   tasks:
+#   - name: testing number is lesser than 100 or not
+#     ansible.builtin.debug:
+#       msg: "number {{number}} less than 100"
+#     when: number < 100
+#   - name: testing the number is greater than 100 or not
+#     ansible.builtin.debug:
+#       msg: "number {{number}} greater than 100"
+#     when: number > 100
+
+- name: playing with conditions 
   hosts: remote
   connection: local
-  vars: 
-    number: 1
+  vars:
+    number: 55
   tasks:
-  - name: testing number is lesser than 100 or not
+  - name: checking number less than or not
     ansible.builtin.debug:
-      msg: "number {{number}} less than 100"
+      msg: "the number {{number}} is less than 100"
     when: number < 100
-  - name: testing the number is greater than 100 or not
-    ansible.builtin.debug:
-      msg: "number {{number}} greater than 100"
-    when: number > 100
