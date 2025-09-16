@@ -1,6 +1,7 @@
 - name: installing and enabling nginx
   hosts: remotee
   connection: local
+  become: true
   tasks:
   - name: installing nginx
     ansible.builtin.package:
