@@ -1,0 +1,9 @@
+- name: running playbook  
+  hosts: local  
+  connection: localhost
+  vars_files:
+  - course.yaml
+  tasks:
+  - name: task1
+    ansible.builtin.debug:
+      msg: " region {{region}}"

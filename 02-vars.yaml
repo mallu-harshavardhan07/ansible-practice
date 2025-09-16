@@ -1,0 +1,10 @@
+- name:  playing with variables
+  hosts: local
+  #connection: localhost
+  vars:
+    remote:india
+  tasks:
+  - name: playbook1
+    ansible.builtin.debug:
+     msg: " remote location is {{remote}}"
+
