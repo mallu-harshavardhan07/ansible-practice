@@ -1,6 +1,6 @@
 - name: playing with conditions
   hosts: remote
-  connection: localhost
+  connection: local
   vars: 
     number: 1
   tasks:

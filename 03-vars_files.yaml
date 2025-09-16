@@ -1,6 +1,6 @@
 - name: running playbook  
-  hosts: local  
-  connection: localhost
+  hosts: remote
+  connection: local
   vars_files:
   - course.yaml
   tasks:
