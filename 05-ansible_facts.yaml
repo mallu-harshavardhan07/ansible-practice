@@ -1,0 +1,10 @@
+- name: printing ansbile facts
+  hosts: local
+  #connection: local
+  tasks:  
+  - name: task 1
+    ansible.builtin.debug:
+      mssg: " printing ansible facts {{ansible_facts}}"
+  - name: task2
+    ansible.builtin.debug:
+      mssg: " printing os name{{ansible_facts['os_family']}}"
