@@ -1,5 +1,5 @@
 - name: playing with conditions
-  hosts: local
+  hosts: remote
   connection: localhost
   vars: 
     number: 1
