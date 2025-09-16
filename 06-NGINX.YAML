@@ -1,5 +1,5 @@
 - name: installing and enabling nginx
-  hosts: remote
+  hosts: remotee
   connection: local
   tasks:
   - name: installing nginx
