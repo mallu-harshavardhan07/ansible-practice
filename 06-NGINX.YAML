@@ -1,6 +1,6 @@
 - name: installing and enabling nginx
   hosts: remotee
-  connection: local
+  #connection: local
   become: true
   tasks:
   - name: installing nginx
