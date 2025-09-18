@@ -1,6 +1,6 @@
 - name: this is file creation playbook
   hosts: web
-  connection: localhost
+  #connection: localhost
   tasks:
   - name: running 01 playbook 
     ansible.builtin.file:
