@@ -1,5 +1,5 @@
 - name: this is file creation playbook
-  hosts: remote
+  hosts: web
   connection: localhost
   tasks:
   - name: running 01 playbook 
